@@ -2,7 +2,7 @@ import { series } from './data.js';
 var seriesTable = document.getElementById("series");
 var promedioTemporadasElement = document.getElementById("promedioTemporadas");
 mostrarTablaSeries(series);
-promedioTemporadasElement.innerHTML = "Promedio de temporadas: ".concat(promedioTemporadas(series));
+promedioTemporadasElement.innerHTML = "Season average: ".concat(promedioTemporadas(series));
 function mostrarTablaSeries(series) {
     var seriesTbody = document.createElement("tbody");
     for (var _i = 0, series_1 = series; _i < series_1.length; _i++) {
